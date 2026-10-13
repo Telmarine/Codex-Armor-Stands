@@ -1,0 +1,12 @@
+{
+  "name": "Entertain",
+  "group": "Bedrock",
+  "icon": "minecraft:armor_stand",
+  "order": 60,
+  "enabled": true,
+  "head": [-15, 0, 0],
+  "left_arm": [-110, -35, 0],
+  "right_arm": [-110, 35, 0],
+  "left_leg": [5, -3, -3],
+  "right_leg": [-5, 3, 3]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Riposte",
+  "group": "Bedrock",
+  "icon": "minecraft:armor_stand",
+  "order": 80,
+  "enabled": true,
+  "head": [16, 20, 0],
+  "left_arm": [4, 8, 237],
+  "right_arm": [246, 0, 89],
+  "left_leg": [-14, -18, -16],
+  "right_leg": [8, 20, 4]
+}

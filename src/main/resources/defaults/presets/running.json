@@ -1,0 +1,11 @@
+{
+  "name": "Running",
+  "group": "Classic",
+  "icon": "minecraft:leather_chestplate",
+  "order": 130,
+  "enabled": true,
+  "left_arm": [40, 0, -10],
+  "right_arm": [-40, 0, 10],
+  "left_leg": [-40, 0, 0],
+  "right_leg": [40, 0, 0]
+}

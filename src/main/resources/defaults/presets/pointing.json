@@ -1,0 +1,10 @@
+{
+  "name": "Pointing",
+  "group": "Classic",
+  "icon": "minecraft:leather_chestplate",
+  "order": 140,
+  "enabled": true,
+  "head": [0, 20, 0],
+  "left_arm": [0, 0, -10],
+  "right_arm": [-90, 18, 0]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Cancan",
+  "group": "Bedrock",
+  "icon": "minecraft:armor_stand",
+  "order": 100,
+  "enabled": true,
+  "head": [-5, 18, 0],
+  "body": [0, 22, 0],
+  "left_arm": [8, 0, -114],
+  "right_arm": [0, 84, 111],
+  "left_leg": [-111, 55, 0],
+  "right_leg": [0, 23, -13]
+}

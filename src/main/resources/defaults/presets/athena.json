@@ -1,0 +1,13 @@
+{
+  "name": "Athena",
+  "group": "Bedrock",
+  "icon": "minecraft:armor_stand",
+  "order": 30,
+  "enabled": true,
+  "head": [-5, 0, 0],
+  "body": [0, 0, 2],
+  "left_arm": [10, 0, -5],
+  "right_arm": [-60, 20, -10],
+  "left_leg": [-3, -3, -3],
+  "right_leg": [3, 3, 3]
+}

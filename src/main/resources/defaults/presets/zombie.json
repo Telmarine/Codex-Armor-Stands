@@ -1,0 +1,12 @@
+{
+  "name": "Zombie",
+  "group": "Bedrock",
+  "icon": "minecraft:armor_stand",
+  "order": 90,
+  "enabled": true,
+  "head": [-10, 0, -5],
+  "left_arm": [-105, 0, 0],
+  "right_arm": [-100, 0, 0],
+  "left_leg": [7, 0, 0],
+  "right_leg": [-46, 0, 0]
+}

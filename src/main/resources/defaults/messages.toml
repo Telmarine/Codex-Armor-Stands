@@ -1,0 +1,138 @@
+# Codex: Armor Stands messages.
+# & color codes (&a, &l, &#FFD700). {placeholders} are filled in. "" turns a line off.
+# Reload with /armorstand reload.
+
+[general]
+prefix = "&8[&6Stands&8] "
+
+[edit]
+no_permission = "{prefix}&cYou can't use &e{mode}&c."
+not_allowed = "{prefix}&cYou can't edit this armor stand."
+locked = "{prefix}&cThis armor stand is locked."
+none_near = "{prefix}&7No armor stand nearby."
+
+[limit]
+reached = "{prefix}&cThis chunk already has {limit} armor stands."
+
+[frame]
+click_frame = "{prefix}&7Item frame mode: right-click a frame to hide it, left-click to make it glow."
+invisible = "Invisible frame"
+glowing = "Glowing frame"
+
+[equipment]
+title = "Armor Stand"
+locked = "{prefix}&cThis armor stand is locked."
+
+[copy]
+title = "Copies"
+slot = "&eCopy {slot}"
+filled = "&aSaved"
+empty_lore = "&7Empty"
+how = "&7Then left-click a stand to copy, right-click to paste. Shift + right-click here to empty."
+empty = "{prefix}&cCopy {slot} is empty. Left-click a stand to copy it first."
+cleared = "{prefix}&7Copy {slot} emptied."
+
+[presets]
+title = "Presets"
+name = "&e{name}"
+group = "&8{group}"
+click = "&7Click to pick, then click a stand"
+
+[bar]
+step = "&6{mode} &8| &f{axis} &8| &a{value} &8({step})"
+toggle = "&6{mode}&8: {state}"
+mode = "&6Mode&8: &e{mode}"
+axis = "&6Axis&8: &e{axis}"
+preset = "&6Preset&8: &e{preset}"
+preset_picked = "&6Preset &e{preset} &7- click a stand to apply"
+copied = "&aCopied to slot {slot}"
+pasted = "&aPasted slot {slot}"
+copy_slot = "&6Copy slot {slot} &7- left-click copies, right-click pastes"
+mirrored = "&aPose mirrored"
+reset = "&aPose reset"
+
+[step]
+coarse = "coarse"
+fine = "fine"
+
+[state]
+on = "&aon"
+off = "&coff"
+yes = "&ayes"
+no = "&cno"
+
+[menu]
+title = "Armor Stand Editor"
+selected = "&aSelected"
+click_select = "&7Click to select"
+axis = "&eAxis {axis}"
+axis_lore = "&7Sneak + scroll with the tool also switches axis"
+step_coarse = "&eSteps: Coarse"
+step_fine = "&eSteps: Fine"
+step_lore = "&7Pose {pose}°, move {move} blocks per click"
+click_switch = "&7Click to switch"
+close = "&cClose"
+back = "&eBack"
+previous = "&ePrevious page"
+next = "&eNext page"
+
+[mode]
+head = "Head"
+body = "Body"
+left_arm = "Left Arm"
+right_arm = "Right Arm"
+left_leg = "Left Leg"
+right_leg = "Right Leg"
+rotate = "Rotate"
+move = "Move"
+scale = "Scale"
+show_arms = "Show Arms"
+small = "Small"
+base_plate = "Base Plate"
+invisible = "Invisible"
+gravity = "Gravity"
+glowing = "Glowing"
+invulnerable = "Invulnerable"
+name_visible = "Name Visible"
+lock = "Lock Slots"
+equipment = "Equipment"
+preset = "Presets"
+copy_paste = "Copy / Paste"
+mirror = "Mirror"
+reset = "Reset Pose"
+item_frame = "Item Frames"
+
+[help]
+head = "&7Left-click +, right-click - on the chosen axis"
+body = "&7Left-click +, right-click - on the chosen axis"
+left_arm = "&7Left-click +, right-click - on the chosen axis"
+right_arm = "&7Left-click +, right-click - on the chosen axis"
+left_leg = "&7Left-click +, right-click - on the chosen axis"
+right_leg = "&7Left-click +, right-click - on the chosen axis"
+rotate = "&7Turn the whole stand"
+move = "&7Nudge the stand along the chosen axis"
+scale = "&7Make the stand bigger or smaller"
+show_arms = "&7Click a stand to show or hide its arms"
+small = "&7Click a stand to switch its size"
+base_plate = "&7Click a stand to show or hide the base plate"
+invisible = "&7Click a stand to hide it (worn items still show)"
+gravity = "&7Click a stand to let it float"
+glowing = "&7Click a stand to outline it"
+invulnerable = "&7Click a stand so it can't be broken"
+name_visible = "&7Click a stand to show its name (use a name tag)"
+lock = "&7Click a stand so nothing can be taken or added"
+equipment = "&7Click a stand to open its armor and hand slots"
+preset = "&7Pick a pose, then click a stand"
+copy_paste = "&7Pick a slot, then copy or paste stands"
+mirror = "&7Click a stand to swap left and right"
+reset = "&7Click a stand to put the pose back to default"
+item_frame = "&7Right-click a frame to hide it, left-click to make it glow"
+
+[cmd]
+tool_given = "{prefix}&aEdit tool given to {player}."
+head_bad_name = "{prefix}&cThat isn't a valid player name."
+head_given = "{prefix}&aGave {name}'s head."
+info_none = "{prefix}&cLook at an armor stand."
+info_no_owner = "nobody"
+info = "{prefix}&7Owner: &e{owner} &8| &7Locked: {locked} &8| &7You can edit: {editable} &8| &7Scale: &e{scale}"
+reloaded = "{prefix}&aReloaded messages and {presets} presets."

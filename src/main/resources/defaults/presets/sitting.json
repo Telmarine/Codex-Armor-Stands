@@ -1,0 +1,11 @@
+{
+  "name": "Sitting",
+  "group": "Classic",
+  "icon": "minecraft:leather_chestplate",
+  "order": 180,
+  "enabled": true,
+  "left_arm": [-80, -20, 0],
+  "right_arm": [-80, 20, 0],
+  "left_leg": [-90, -10, 0],
+  "right_leg": [-90, 10, 0]
+}

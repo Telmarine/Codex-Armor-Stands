@@ -1,0 +1,12 @@
+{
+  "name": "Shrug",
+  "group": "Elements",
+  "icon": "minecraft:iron_chestplate",
+  "order": 330,
+  "enabled": true,
+  "head": [0, 0, 10],
+  "left_arm": [-35, 0, -35],
+  "right_arm": [-35, 0, 35],
+  "left_leg": [0, 0, -2],
+  "right_leg": [0, 0, 2]
+}

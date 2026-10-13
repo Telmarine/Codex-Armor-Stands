@@ -1,0 +1,13 @@
+{
+  "name": "Confident",
+  "group": "Classic",
+  "icon": "minecraft:leather_chestplate",
+  "order": 210,
+  "enabled": true,
+  "head": [-10, 20, 0],
+  "body": [-2, 0, 0],
+  "left_arm": [5, 0, 0],
+  "right_arm": [5, 0, 0],
+  "left_leg": [0, -10, -4],
+  "right_leg": [16, 2, 10]
+}

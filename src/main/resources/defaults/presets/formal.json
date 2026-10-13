@@ -1,0 +1,13 @@
+{
+  "name": "Formal",
+  "group": "Classic",
+  "icon": "minecraft:leather_chestplate",
+  "order": 260,
+  "enabled": true,
+  "head": [4, 0, 0],
+  "body": [4, 0, 0],
+  "left_arm": [30, -20, 21],
+  "right_arm": [30, 22, -20],
+  "left_leg": [0, 0, -5],
+  "right_leg": [0, 0, 5]
+}

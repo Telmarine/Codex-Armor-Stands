@@ -1,0 +1,13 @@
+{
+  "name": "Joyous",
+  "group": "Classic",
+  "icon": "minecraft:leather_chestplate",
+  "order": 280,
+  "enabled": true,
+  "head": [-11, 0, 0],
+  "body": [-4, 0, 0],
+  "left_arm": [0, 0, -100],
+  "right_arm": [0, 0, 100],
+  "left_leg": [-8, 0, -60],
+  "right_leg": [-8, 0, 60]
+}

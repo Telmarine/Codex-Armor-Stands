@@ -1,0 +1,13 @@
+{
+  "name": "Sad",
+  "group": "Classic",
+  "icon": "minecraft:leather_chestplate",
+  "order": 270,
+  "enabled": true,
+  "head": [63, 0, 0],
+  "body": [10, 0, 0],
+  "left_arm": [-5, 0, -5],
+  "right_arm": [-5, 0, 5],
+  "left_leg": [-5, 16, -5],
+  "right_leg": [-5, -10, 5]
+}

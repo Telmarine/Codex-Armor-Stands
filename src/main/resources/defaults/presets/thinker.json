@@ -1,0 +1,11 @@
+{
+  "name": "Thinker",
+  "group": "Elements",
+  "icon": "minecraft:iron_chestplate",
+  "order": 320,
+  "enabled": true,
+  "head": [20, 0, 0],
+  "body": [5, 0, 0],
+  "left_arm": [-40, 30, 0],
+  "right_arm": [-120, -40, 0]
+}

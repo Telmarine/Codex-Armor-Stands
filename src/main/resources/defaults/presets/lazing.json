@@ -1,0 +1,13 @@
+{
+  "name": "Lazing",
+  "group": "Classic",
+  "icon": "minecraft:leather_chestplate",
+  "order": 240,
+  "enabled": true,
+  "head": [14, -12, 6],
+  "body": [5, 0, 0],
+  "left_arm": [-4, -20, -10],
+  "right_arm": [-40, 20, 0],
+  "left_leg": [-88, 46, 0],
+  "right_leg": [-88, 71, 0]
+}

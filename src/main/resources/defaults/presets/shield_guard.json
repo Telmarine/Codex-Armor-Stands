@@ -1,0 +1,13 @@
+{
+  "name": "Shield Guard",
+  "group": "Elements",
+  "icon": "minecraft:iron_chestplate",
+  "order": 380,
+  "enabled": true,
+  "head": [5, -10, 0],
+  "body": [5, 10, 0],
+  "left_arm": [-70, 20, 0],
+  "right_arm": [-30, 0, 10],
+  "left_leg": [-10, 0, 0],
+  "right_leg": [10, 0, 0]
+}

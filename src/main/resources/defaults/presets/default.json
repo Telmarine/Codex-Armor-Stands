@@ -1,0 +1,11 @@
+{
+  "name": "Default",
+  "group": "Bedrock",
+  "icon": "minecraft:armor_stand",
+  "order": 10,
+  "enabled": true,
+  "left_arm": [-10, 0, -10],
+  "right_arm": [-15, 0, 10],
+  "left_leg": [-1, 0, -1],
+  "right_leg": [1, 0, 1]
+}

@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.tac5studios.codexarmorstands.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "server": [
+    "ArmorStandAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

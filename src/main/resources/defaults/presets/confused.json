@@ -1,0 +1,13 @@
+{
+  "name": "Confused",
+  "group": "Classic",
+  "icon": "minecraft:leather_chestplate",
+  "order": 250,
+  "enabled": true,
+  "head": [0, 30, 0],
+  "body": [0, 13, 0],
+  "left_arm": [145, 22, -49],
+  "right_arm": [-22, 31, 10],
+  "left_leg": [-6, 0, 0],
+  "right_leg": [6, -20, 0]
+}

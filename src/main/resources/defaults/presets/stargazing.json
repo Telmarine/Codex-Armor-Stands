@@ -1,0 +1,13 @@
+{
+  "name": "Stargazing",
+  "group": "Classic",
+  "icon": "minecraft:leather_chestplate",
+  "order": 290,
+  "enabled": true,
+  "head": [-22, 25, 0],
+  "body": [-4, 10, 0],
+  "left_arm": [4, 18, 0],
+  "right_arm": [-153, 34, -3],
+  "left_leg": [6, 24, 0],
+  "right_leg": [-4, 17, 2]
+}

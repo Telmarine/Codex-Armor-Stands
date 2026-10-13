@@ -1,0 +1,10 @@
+{
+  "name": "Pointing Up",
+  "group": "Elements",
+  "icon": "minecraft:iron_chestplate",
+  "order": 340,
+  "enabled": true,
+  "head": [-40, 0, 0],
+  "left_arm": [0, 0, -5],
+  "right_arm": [-175, 0, 0]
+}

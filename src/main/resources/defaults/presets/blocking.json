@@ -1,0 +1,11 @@
+{
+  "name": "Blocking",
+  "group": "Classic",
+  "icon": "minecraft:leather_chestplate",
+  "order": 150,
+  "enabled": true,
+  "left_arm": [-50, 50, 0],
+  "right_arm": [-20, -20, 0],
+  "left_leg": [20, 0, 0],
+  "right_leg": [-20, 0, 0]
+}

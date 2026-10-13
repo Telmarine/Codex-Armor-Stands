@@ -1,0 +1,11 @@
+{
+  "name": "Salute",
+  "group": "Bedrock",
+  "icon": "minecraft:armor_stand",
+  "order": 70,
+  "enabled": true,
+  "left_arm": [10, 0, -5],
+  "right_arm": [-70, -40, 0],
+  "left_leg": [-1, 0, -1],
+  "right_leg": [1, 0, 1]
+}

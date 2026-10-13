@@ -1,0 +1,11 @@
+{
+  "name": "Walking",
+  "group": "Classic",
+  "icon": "minecraft:leather_chestplate",
+  "order": 120,
+  "enabled": true,
+  "left_arm": [-20, 0, -10],
+  "right_arm": [20, 0, 10],
+  "left_leg": [20, 0, 0],
+  "right_leg": [-20, 0, 0]
+}

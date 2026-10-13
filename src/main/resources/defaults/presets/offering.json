@@ -1,0 +1,13 @@
+{
+  "name": "Offering",
+  "group": "Elements",
+  "icon": "minecraft:iron_chestplate",
+  "order": 400,
+  "enabled": true,
+  "head": [15, 0, 0],
+  "body": [4, 0, 0],
+  "left_arm": [-5, 0, -6],
+  "right_arm": [-60, -10, 0],
+  "left_leg": [4, 0, -2],
+  "right_leg": [-6, 0, 2]
+}

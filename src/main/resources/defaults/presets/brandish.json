@@ -1,0 +1,13 @@
+{
+  "name": "Brandish",
+  "group": "Bedrock",
+  "icon": "minecraft:armor_stand",
+  "order": 40,
+  "enabled": true,
+  "head": [-15, 0, 0],
+  "body": [0, 0, -2],
+  "left_arm": [20, 0, -10],
+  "right_arm": [-110, 50, 0],
+  "left_leg": [5, -3, -3],
+  "right_leg": [-5, 3, 3]
+}

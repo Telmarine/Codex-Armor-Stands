@@ -1,0 +1,10 @@
+{
+  "name": "Sword Raised",
+  "group": "Elements",
+  "icon": "minecraft:iron_chestplate",
+  "order": 370,
+  "enabled": true,
+  "head": [-15, 0, 0],
+  "left_arm": [-150, 10, 0],
+  "right_arm": [-150, -10, 0]
+}

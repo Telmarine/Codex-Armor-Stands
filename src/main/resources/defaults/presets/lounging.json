@@ -1,0 +1,13 @@
+{
+  "name": "Lounging",
+  "group": "Elements",
+  "icon": "minecraft:iron_chestplate",
+  "order": 390,
+  "enabled": true,
+  "head": [-5, 15, 0],
+  "body": [-10, 0, 0],
+  "left_arm": [-50, -10, 0],
+  "right_arm": [30, 0, 20],
+  "left_leg": [-90, -10, 0],
+  "right_leg": [-90, 10, 0]
+}

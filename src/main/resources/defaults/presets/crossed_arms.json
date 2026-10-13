@@ -1,0 +1,11 @@
+{
+  "name": "Crossed Arms",
+  "group": "Elements",
+  "icon": "minecraft:iron_chestplate",
+  "order": 360,
+  "enabled": true,
+  "left_arm": [-90, 40, 0],
+  "right_arm": [-90, -40, 0],
+  "left_leg": [0, 0, -3],
+  "right_leg": [0, 0, 3]
+}

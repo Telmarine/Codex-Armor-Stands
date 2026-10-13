@@ -1,0 +1,13 @@
+{
+  "name": "Solemn",
+  "group": "Bedrock",
+  "icon": "minecraft:armor_stand",
+  "order": 20,
+  "enabled": true,
+  "head": [15, 0, 0],
+  "body": [0, 0, 2],
+  "left_arm": [-30, 15, 15],
+  "right_arm": [-60, -20, -10],
+  "left_leg": [-1, 0, -1],
+  "right_leg": [1, 0, 1]
+}

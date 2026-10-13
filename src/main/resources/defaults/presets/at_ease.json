@@ -1,0 +1,11 @@
+{
+  "name": "At Ease",
+  "group": "Elements",
+  "icon": "minecraft:iron_chestplate",
+  "order": 350,
+  "enabled": true,
+  "left_arm": [25, 0, 12],
+  "right_arm": [25, 0, -12],
+  "left_leg": [0, 0, -6],
+  "right_leg": [0, 0, 6]
+}

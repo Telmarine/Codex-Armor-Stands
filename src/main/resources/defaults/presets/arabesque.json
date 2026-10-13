@@ -1,0 +1,12 @@
+{
+  "name": "Arabesque",
+  "group": "Classic",
+  "icon": "minecraft:leather_chestplate",
+  "order": 190,
+  "enabled": true,
+  "head": [-15, 0, 0],
+  "body": [10, 0, 0],
+  "left_arm": [70, 0, -10],
+  "right_arm": [-140, -10, 0],
+  "left_leg": [75, 0, 0]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Hero",
+  "group": "Bedrock",
+  "icon": "minecraft:armor_stand",
+  "order": 110,
+  "enabled": true,
+  "head": [-4, 67, 0],
+  "body": [0, 8, 0],
+  "left_arm": [16, 32, -8],
+  "right_arm": [-99, 63, 0],
+  "left_leg": [0, -75, -8],
+  "right_leg": [4, 63, 8]
+}
