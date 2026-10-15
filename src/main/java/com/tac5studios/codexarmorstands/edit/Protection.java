@@ -19,6 +19,8 @@ import java.util.UUID;
  *  - Nobody may edit a stand on land claimed by someone else.
  *  - Someone else's stand: only the owner of the land it stands on.
  *  - Stands with no owner (placed before the mod, or by commands): whoever may build there.
+ *
+ * <p>Elements: Claims has trust ranks, so there "the land owner" means anyone who may build in that claim.
  */
 public final class Protection {
 
@@ -29,9 +31,11 @@ public final class Protection {
     private static final String OPAC_API = "xaero.pac.common.server.api.OpenPACServerAPI";
     private static final String FTB_API = "dev.ftb.mods.ftbchunks.api.FTBChunksAPI";
     private static final String FTB_POS = "dev.ftb.mods.ftblibrary.math.ChunkDimPos";
+    private static final String ELEMENTS_API = "com.tac5studios.elementsclaims.api.ClaimsAPI";
 
     private static boolean opacWarned;
     private static boolean ftbWarned;
+    private static boolean elementsWarned;
 
     private Protection() {}
 
@@ -52,7 +56,7 @@ public final class Protection {
         if (Perm.has(p, Perm.BYPASS)) return true;
         UUID owner = Features.OWNERSHIP.get() ? owner(e) : null;
         if (owner != null && owner.equals(p.getUUID())) return true;
-        Claim c = Features.CLAIMS.get() ? claimAt(e.level(), e.blockPosition(), p.getUUID()) : Claim.UNCLAIMED;
+        Claim c = Features.CLAIMS.get() ? claimAt(e.level(), e.blockPosition(), p) : Claim.UNCLAIMED;
         if (c == Claim.OTHER) return false;
         if (owner != null) return c == Claim.OWN;
         return true;
@@ -66,8 +70,12 @@ public final class Protection {
     }
 
     /** Checks every installed claim mod that's switched on. OTHER wins over OWN. */
-    public static Claim claimAt(Level level, BlockPos pos, UUID player) {
+    public static Claim claimAt(Level level, BlockPos pos, ServerPlayer p) {
+        UUID player = p.getUUID();
         Claim result = Claim.UNCLAIMED;
+        if (Features.CLAIMS_ELEMENTS.get() && ModList.get().isLoaded("elements_claims")) {
+            result = merge(result, elements(level, pos, p));
+        }
         if (Features.CLAIMS_OPAC.get() && ModList.get().isLoaded("openpartiesandclaims")) {
             result = merge(result, opac(level, pos, player));
         }
@@ -97,6 +105,20 @@ public final class Protection {
             if (!opacWarned) {
                 opacWarned = true;
                 CodexArmorStands.LOGGER.warn("[ArmorStands] Open Parties and Claims check failed: {}", e.toString());
+            }
+            return Claim.UNKNOWN;
+        }
+    }
+
+    /** Elements: Claims: the player must be allowed to build in the claim (owner, or a rank with Build). */
+    private static Claim elements(Level level, BlockPos pos, ServerPlayer p) {
+        try {
+            if (!Boolean.TRUE.equals(Reflect.callStatic(ELEMENTS_API, "isClaimed", level, pos))) return Claim.UNCLAIMED;
+            return Boolean.TRUE.equals(Reflect.callStatic(ELEMENTS_API, "canBuild", p, level, pos)) ? Claim.OWN : Claim.OTHER;
+        } catch (RuntimeException e) {
+            if (!elementsWarned) {
+                elementsWarned = true;
+                CodexArmorStands.LOGGER.warn("[ArmorStands] Elements: Claims check failed: {}", e.toString());
             }
             return Claim.UNKNOWN;
         }

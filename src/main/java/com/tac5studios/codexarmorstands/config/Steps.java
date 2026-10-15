@@ -28,7 +28,8 @@ public final class Steps {
         b.comment("Limits.").push("limits");
         SCALE_MIN = b.comment("Smallest scale players can set.").defineInRange("scale_min", 0.5, 0.0625, 16.0);
         SCALE_MAX = b.comment("Largest scale players can set.").defineInRange("scale_max", 2.0, 0.0625, 16.0);
-        CHUNK_LIMIT = b.comment("Most armor stands players can place in one chunk (when chunk_limit is on in features.toml).")
+        CHUNK_LIMIT = b.comment("Most armor stands players can place in one chunk (when chunk_limit is on in features.toml).",
+                        "Not used when Elements: Claims or Elements: Nexus 1.0.2+ is installed.")
                 .defineInRange("per_chunk", 32, 1, 10000);
         COPY_SLOTS = b.comment("How many copies each player can keep (1 to 9).").defineInRange("copy_slots", 9, 1, 9);
         b.pop();

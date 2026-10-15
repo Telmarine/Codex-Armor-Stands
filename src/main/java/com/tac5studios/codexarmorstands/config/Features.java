@@ -30,7 +30,7 @@ public final class Features {
     public static final BooleanValue RENAME_COLORS, PLAYER_HEADS, CHUNK_LIMIT, GIVE_TOOL;
 
     // Protection
-    public static final BooleanValue OWNERSHIP, LOCK_PROTECTS, CLAIMS, CLAIMS_OPAC, CLAIMS_FTB_CHUNKS;
+    public static final BooleanValue OWNERSHIP, LOCK_PROTECTS, CLAIMS, CLAIMS_OPAC, CLAIMS_FTB_CHUNKS, CLAIMS_ELEMENTS;
 
     // Overlap guard
     public static final BooleanValue OVERLAP_GUARD;
@@ -80,7 +80,8 @@ public final class Features {
         b.comment("Extras.").push("extras");
         RENAME_COLORS = sw(b, "rename_colors", true, "Name tags with & color codes give armor stands a colored name.");
         PLAYER_HEADS = sw(b, "player_heads", true, "/armorstand head <name> gives a player head. (restart)");
-        CHUNK_LIMIT = sw(b, "chunk_limit", false, "Limit how many armor stands players can place in one chunk (limit in steps.toml).");
+        CHUNK_LIMIT = sw(b, "chunk_limit", false, "Limit how many armor stands players can place in one chunk (limit in steps.toml).",
+                "Turned off when Elements: Claims or Elements: Nexus 1.0.2+ is installed: their entity limits are used instead.");
         GIVE_TOOL = sw(b, "give_tool", true, "/armorstand tool gives the edit tool. (restart)");
         b.pop();
 
@@ -90,11 +91,14 @@ public final class Features {
         CLAIMS = sw(b, "claims", true, "Check claim mods before every edit.");
         CLAIMS_OPAC = sw(b, "opac", true, "Use Open Parties and Claims for claim checks.");
         CLAIMS_FTB_CHUNKS = sw(b, "ftb_chunks", true, "Use FTB Chunks for claim checks.");
+        CLAIMS_ELEMENTS = sw(b, "elements_claims", true, "Use Elements: Claims for claim checks.");
         b.pop();
 
-        b.comment("Turns the editor off when another armor stand editor mod is installed.").push("overlap_guard");
+        b.comment("Turns the editor off when another armor stand editor mod is installed,",
+                "and the chunk limit off when Elements: Claims or Elements: Nexus handles entity limits.").push("overlap_guard");
         OVERLAP_GUARD = sw(b, "enabled", true, "Turn the overlap guard on or off. (restart)");
-        OVERLAP_FORCE_ON = b.comment("Keep the editor on even when Armor Statues or Armor Poser is installed: add \"editor\".")
+        OVERLAP_FORCE_ON = b.comment("Keep the editor on even when Armor Statues or Armor Poser is installed: add \"editor\".",
+                        "Keep this mod's chunk limit on next to Elements: Claims or Elements: Nexus: add \"chunk_limit\".")
                 .defineListAllowEmpty("force_on", List.of(), () -> "", o -> o instanceof String);
         b.pop();
 
@@ -103,7 +107,7 @@ public final class Features {
 
     private Features() {}
 
-    private static BooleanValue sw(ModConfigSpec.Builder b, String key, boolean def, String comment) {
+    private static BooleanValue sw(ModConfigSpec.Builder b, String key, boolean def, String... comment) {
         return b.comment(comment).define(key, def);
     }
 
@@ -119,6 +123,11 @@ public final class Features {
     /** True when the editor and this switch are both on. */
     public static boolean on(BooleanValue mode) {
         return editor() && mode.get();
+    }
+
+    /** True when the chunk limit is on and not handed over to an Elements mod. */
+    public static boolean chunkLimit() {
+        return on(CHUNK_LIMIT) && !com.tac5studios.codexarmorstands.overlap.OverlapGuard.chunkLimitDeferred();
     }
 
     public static boolean forcedOn(String name) {

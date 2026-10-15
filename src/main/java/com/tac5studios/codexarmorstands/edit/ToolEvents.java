@@ -196,7 +196,7 @@ public final class ToolEvents {
         placer = null;
         if (p == null || p.level() != level || p.distanceToSqr(s) > 10 * 10) return;
 
-        if (Features.on(Features.CHUNK_LIMIT) && !Perm.has(p, Perm.LIMIT_BYPASS)) {
+        if (Features.chunkLimit() && !Perm.has(p, Perm.LIMIT_BYPASS)) {
             ChunkPos cp = s.chunkPosition();
             AABB box = new AABB(cp.getMinBlockX(), level.getMinBuildHeight(), cp.getMinBlockZ(),
                     cp.getMaxBlockX() + 1, level.getMaxBuildHeight(), cp.getMaxBlockZ() + 1);

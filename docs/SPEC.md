@@ -57,7 +57,7 @@ Everything ships in 1.0.0. Revisions come after CurseForge feedback.
 ## Ownership & protection [1.0.0]
 - A stand records who placed it (persistent entity data). Owner + staff (`bypass` node) can edit; others can't.
 - Unowned stands (placed before the mod, or by commands) are editable by whoever can build there.
-- Claims: OPAC and FTB Chunks checked before every edit (reflection, both optional). Editing only where the player could break blocks.
+- Claims: Elements: Claims, OPAC and FTB Chunks checked before every edit (reflection, all optional). Editing only where the player could break blocks. Elements: Claims [1.0.1]: `ClaimsAPI.isClaimed` + `canBuild`; Build in the claim counts as land owner.
 - Locked stands show a short particle puff when someone tries to take an item.
 - Marker stands are skipped (can't be clicked).
 
@@ -88,6 +88,6 @@ Full node = `armorstands.` + path, e.g. `armorstands.edit.pose`.
 ## Extras [1.0.0]
 - **Item Frames** mode: right-click a frame = invisible on/off, left-click = glowing on/off (claims checked).
 - `/armorstand head <name>` gives a player head (staff).
-- Per-chunk limit on placing armor stands (off by default, `steps.toml` per_chunk = 32), `limit.bypass` node.
+- Per-chunk limit on placing armor stands (off by default, `steps.toml` per_chunk = 32), `limit.bypass` node. [1.0.1] Handed over to Elements: Claims or Elements: Nexus 1.0.2+ when installed (their settings win, even when off); `overlap_guard.force_on = ["chunk_limit"]` keeps it.
 - Name tags with `&` colors give stands colored names (`rename.color`).
 - `/as` alias for `/armorstand`.

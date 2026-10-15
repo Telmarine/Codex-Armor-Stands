@@ -63,7 +63,7 @@ public final class Perm {
     /** Edit any stand: ignores owners, claims and locks. */
     public static final String BYPASS = node("bypass", Who.STAFF, Features::editor);
     /** Place more stands than the chunk limit. */
-    public static final String LIMIT_BYPASS = node("limit.bypass", Who.STAFF, () -> Features.on(Features.CHUNK_LIMIT));
+    public static final String LIMIT_BYPASS = node("limit.bypass", Who.STAFF, Features::chunkLimit);
     /** /armorstand reload, /armorstand tool <player>. */
     public static final String ADMIN = node("admin", Who.ADMIN, () -> true);
 
